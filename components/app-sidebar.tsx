@@ -43,7 +43,7 @@ const data = {
     },
     {
       title: "Laporan",
-      url: "#",
+      url: "/dashboard/reports",
       icon: FileText,
       items: [
         {

@@ -15,6 +15,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "MAGREPORT | Magang Report",
+  description: "Sistem Manajemen Laporan Magang",
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  }
 };
 
 export default function RootLayout({
@@ -26,6 +32,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         <ThemeProvider
           attribute="class"
