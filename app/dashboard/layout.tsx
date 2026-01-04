@@ -14,12 +14,15 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { useTimeBasedTheme } from "@/hooks/use-time-based-theme"
 
 export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  // Initialize time-based theme
+  useTimeBasedTheme()
   return (
     <div suppressHydrationWarning>
       <SidebarProvider>
