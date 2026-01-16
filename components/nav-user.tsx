@@ -41,7 +41,7 @@ export function NavUser({
   const router = useRouter()
 
   const handleLogout = () => {
-    router.push('/login')
+    router.push('/signin')
   }
 
   return (
