@@ -4,15 +4,12 @@ Sistem manajemen laporan magang berbasis web yang memungkinkan mahasiswa untuk m
 
 ## Fitur
 
-- Sistem role-based dengan 4 role: Mahasiswa, Dosen Pembimbing, Pembimbing Lapangan, Admin
 - Dashboard dengan overview progress magang
 - Manajemen laporan (buat, edit, lihat semua laporan)
-- Sistem autentikasi dengan role selector
-- Profile dan pengaturan pengguna sesuai role
-- Manajemen mahasiswa untuk dosen dan pembimbing
-- Manajemen pengguna untuk admin
-- Theme toggle (light/dark mode) dengan auto mode berdasarkan waktu
-- Sidebar navigation yang responsive dan dinamis per role
+- Sistem autentikasi dengan halaman login
+- Profile dan pengaturan pengguna
+- Theme toggle (light/dark mode)
+- Sidebar navigation yang responsive
 - Interface dalam bahasa Indonesia
 
 ## Tech Stack
@@ -42,35 +39,12 @@ Buka [http://localhost:3000](http://localhost:3000) di browser.
 ## Struktur Aplikasi
 
 - `/` - Redirect ke halaman login
-- `/login` - Halaman autentikasi dengan role selector
-
-### Mahasiswa
-- `/mahasiswa/dashboard` - Dashboard mahasiswa
-- `/mahasiswa/dashboard/reports` - Daftar laporan
-- `/mahasiswa/dashboard/reports/new` - Buat laporan baru
-- `/mahasiswa/dashboard/profile` - Profil mahasiswa
-- `/mahasiswa/dashboard/settings` - Pengaturan
-
-### Dosen Pembimbing
-- `/dosen/dashboard` - Dashboard dosen
-- `/dosen/dashboard/students` - Daftar mahasiswa bimbingan
-- `/dosen/dashboard/reports` - Review laporan mahasiswa
-- `/dosen/dashboard/profile` - Profil dosen
-- `/dosen/dashboard/settings` - Pengaturan
-
-### Pembimbing Lapangan
-- `/pembimbing/dashboard` - Dashboard pembimbing
-- `/pembimbing/dashboard/students` - Daftar mahasiswa supervisi
-- `/pembimbing/dashboard/reports` - Review laporan mahasiswa
-- `/pembimbing/dashboard/profile` - Profil pembimbing
-- `/pembimbing/dashboard/settings` - Pengaturan
-
-### Admin
-- `/admin/dashboard` - Dashboard admin
-- `/admin/dashboard/users` - Manajemen pengguna (mahasiswa, dosen, pembimbing)
-- `/admin/dashboard/reports` - Semua laporan
-- `/admin/dashboard/profile` - Profil admin
-- `/admin/dashboard/settings` - Pengaturan sistem
+- `/login` - Halaman autentikasi
+- `/dashboard` - Dashboard utama dengan sidebar
+- `/dashboard/reports` - Daftar semua laporan
+- `/dashboard/reports/new` - Form buat laporan baru
+- `/dashboard/profile` - Halaman profil pengguna
+- `/dashboard/settings` - Pengaturan aplikasi
 
 ## Development
 
